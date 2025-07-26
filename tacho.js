@@ -48,6 +48,7 @@ if ("geolocation" in navigator) {
       if (speed !== null) {
         const kmh = (speed * 3.6).toFixed(1);
         speedDisplay.textContent = kmh + " km/h";
+        document.getElementById("distance").innerHTML="Distance: "+totalDistance;
       } else {
         speedDisplay.textContent = "Geschwindigkeit nicht verfügbar";
       }
