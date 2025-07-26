@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>GPS Tacho</title>
 </head>
 <body>
   <h1>GPS Geschwindigkeit:</h1>
-  <p><strong id="speed">Wird geladen...</strong></p>
-  <p id="average"><strong>Wird geladen...</strong></p>
+  <div class="container">
+  <p id="speed">Speed: 0km/h</p>
+  <p id="average">Ø Avg. Speed: 0km/h</p>
+  <p id="distance">Distance: 0km</p>
+  <p id="time">Time: 0h 0m</p>
+  </div>
+  <p id="error"></p>
   <script src="tacho.js"></script>
 </body>
 </html>
